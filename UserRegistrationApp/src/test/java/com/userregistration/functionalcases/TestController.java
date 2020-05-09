@@ -1,6 +1,6 @@
 package com.social.imageApp.account.controllerTest;
 
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -26,6 +26,7 @@ import com.social.imageApp.account.controller.UserController;
 import com.social.imageApp.account.model.User;
 import com.social.imageApp.account.service.UserService;
 
+@SuppressWarnings("deprecation")
 @RunWith(MockitoJUnitRunner.class)
 public class UserControllerTest {
 
@@ -53,7 +54,7 @@ public class UserControllerTest {
 		List<User> userList = new ArrayList<>();
 		userList.add(new User());
 		userList.add(new User());
-		when(userService.listUser()).thenReturn((List) userList);
+		when(userService.listUser()).thenReturn((List<User>) userList);
 		this.mockMvc.perform(get("/listAllUsers")).andExpect(status().isOk()).andExpect(view().name("ok"));
 	}
 

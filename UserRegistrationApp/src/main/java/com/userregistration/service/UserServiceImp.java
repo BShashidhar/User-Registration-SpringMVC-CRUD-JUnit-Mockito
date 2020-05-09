@@ -18,28 +18,30 @@ public class UserServiceImp implements UserService {
 	
 	@Transactional
 	@Override
-	public Boolean saveUser(User user) {		
-		userDao.saveUser(user);
-		return true;
+	public Boolean saveUser(User user) {
+		return null;		
+		
 	}
 	
 	@Override
-	public User getUser(int userId) {		
-		return userDao.getUser(userId);
+	public User getUser(int userId) {
+		return null;		
+
 	}
 
 	@Override
 	public List<User> listUser() {
-		return userDao.listUser();
+		return null;
+		
 	}
 
 	@Override
 	public void updateUser(int userId,User user) {		
-		userDao.updateUser(userId, user);
+		
 	}
 
 	@Override
 	public void deleteUser(int userId) {
-		userDao.deleteUser(userId);
+		
 	}
 }

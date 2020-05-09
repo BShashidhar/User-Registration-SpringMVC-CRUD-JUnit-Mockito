@@ -1,6 +1,6 @@
 package com.social.imageApp.account.serviceImplTest;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -12,13 +12,13 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.springframework.test.web.servlet.MockMvc;
 
 import com.social.imageApp.account.UtilTestClass.MasterData;
 import com.social.imageApp.account.dao.UserDao;
 import com.social.imageApp.account.model.User;
 import com.social.imageApp.account.service.UserServiceImp;
 
+@SuppressWarnings("deprecation")
 @RunWith(MockitoJUnitRunner.class)
 public class UserRegiServiceImplTest {
 
@@ -30,8 +30,6 @@ public class UserRegiServiceImplTest {
 
 	@InjectMocks
 	private UserServiceImp userServiceImp;
-
-	private MockMvc mockMvc;
 
 	@Test
 	public void testSaveUsersImplTest() throws Exception {
@@ -52,7 +50,7 @@ public class UserRegiServiceImplTest {
 		List<User> userList = new ArrayList<>();
 		userList.add(new User());
 		userList.add(new User());
-		when(userDao.listUser()).thenReturn((List) userList);
+		when(userDao.listUser()).thenReturn((List<User>) userList);
 		List<User> list = userServiceImp.listUser();
 		assertEquals(2, list.size());
 	}
@@ -60,7 +58,7 @@ public class UserRegiServiceImplTest {
 	@Test
 	public void testViewAllUsersImplTest1() throws Exception {
 		List<User> userList = new ArrayList<>();
-		when(userDao.listUser()).thenReturn((List) userList);
+		when(userDao.listUser()).thenReturn((List<User>) userList);
 		List<User> list = userServiceImp.listUser();
 		assertEquals(Collections.EMPTY_LIST, list);
 	}
