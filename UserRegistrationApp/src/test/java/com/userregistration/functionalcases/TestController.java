@@ -1,4 +1,4 @@
-package com.social.imageApp.account.controllerTest;
+package com.userregistration.functionalcases;
 
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -21,14 +21,14 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.google.gson.Gson;
-import com.social.imageApp.account.UtilTestClass.MasterData;
-import com.social.imageApp.account.controller.UserController;
-import com.social.imageApp.account.model.User;
-import com.social.imageApp.account.service.UserService;
+import com.userregistration.controller.UserController;
+import com.userregistration.model.User;
+import com.userregistration.service.UserService;
+import com.userregistration.utiltestclass.MasterData;
 
 @SuppressWarnings("deprecation")
 @RunWith(MockitoJUnitRunner.class)
-public class UserControllerTest {
+public class TestController {
 
 	@Mock
 	private UserService userService;

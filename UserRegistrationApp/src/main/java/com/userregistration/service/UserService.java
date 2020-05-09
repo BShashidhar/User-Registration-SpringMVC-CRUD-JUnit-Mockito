@@ -1,8 +1,8 @@
-package com.social.imageApp.account.service;
+package com.userregistration.service;
 
 import java.util.List;
 
-import com.social.imageApp.account.model.User;
+import com.userregistration.model.User;
 
 public interface UserService {
 	Boolean saveUser(User user);

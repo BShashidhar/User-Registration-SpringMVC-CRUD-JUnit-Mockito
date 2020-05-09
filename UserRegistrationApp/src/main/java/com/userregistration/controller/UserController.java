@@ -1,4 +1,4 @@
-package com.social.imageApp.account.controller;
+package com.userregistration.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 

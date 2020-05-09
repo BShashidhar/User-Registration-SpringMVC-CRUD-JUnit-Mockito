@@ -1,0 +1,4 @@
+Total=6
+Failed=3
+Ignore=0
+ExecTime=4

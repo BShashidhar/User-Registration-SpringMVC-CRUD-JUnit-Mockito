@@ -1,8 +1,8 @@
-package com.social.imageApp.account.dao;
+package com.userregistration.dao;
 
 import java.util.List;
 
-import com.social.imageApp.account.model.User;
+import com.userregistration.model.User;
 
 public interface UserDao {	
 	void saveUser(User user);

@@ -1,4 +1,4 @@
-package com.social.imageApp.account.EntityValidationTest;
+package com.userregistration.boundarycases;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -14,10 +14,10 @@ import javax.validation.ValidatorFactory;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.social.imageApp.account.UtilTestClass.MasterData;
-import com.social.imageApp.account.model.User;
+import com.userregistration.model.User;
+import com.userregistration.utiltestclass.MasterData;
 
-public class EntityValidationTest {
+public class TestBoundary {
 
     private Validator validator;
 

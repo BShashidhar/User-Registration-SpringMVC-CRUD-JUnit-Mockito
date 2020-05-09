@@ -1,4 +1,4 @@
-package com.social.imageApp.account.serviceImplTest;
+package com.userregistration.functionalcases;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
@@ -13,14 +13,14 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.social.imageApp.account.UtilTestClass.MasterData;
-import com.social.imageApp.account.dao.UserDao;
-import com.social.imageApp.account.model.User;
-import com.social.imageApp.account.service.UserServiceImp;
+import com.userregistration.dao.UserDao;
+import com.userregistration.model.User;
+import com.userregistration.service.UserServiceImp;
+import com.userregistration.utiltestclass.MasterData;
 
 @SuppressWarnings("deprecation")
 @RunWith(MockitoJUnitRunner.class)
-public class UserRegiServiceImplTest {
+public class TestFunctional {
 
 	@Mock
 	private UserDao userDao;

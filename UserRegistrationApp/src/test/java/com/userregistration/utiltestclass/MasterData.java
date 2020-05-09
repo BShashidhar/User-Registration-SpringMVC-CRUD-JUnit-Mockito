@@ -1,6 +1,6 @@
-package com.social.imageApp.account.UtilTestClass;
+package com.userregistration.utiltestclass;
 
-import com.social.imageApp.account.model.User;
+import com.userregistration.model.User;
 
 public class MasterData {
 	public static User getDetails() {

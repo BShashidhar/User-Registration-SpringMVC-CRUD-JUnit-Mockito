@@ -1,4 +1,4 @@
-package com.social.imageApp.account.model;
+package com.userregistration.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,7 +7,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Admin")
 public class Admin {
 	@Id
@@ -20,28 +27,4 @@ public class Admin {
 
 	@Column(name = "adminPassword")
 	private String adminPassword;
-
-	public int getAdminId() {
-		return adminId;
-	}
-
-	public void setAdminId(int adminId) {
-		this.adminId = adminId;
-	}
-
-	public String getAdminName() {
-		return adminName;
-	}
-
-	public void setAdminName(String adminName) {
-		this.adminName = adminName;
-	}
-
-	public String getAdminPassword() {
-		return adminPassword;
-	}
-
-	public void setAdminPassword(String adminPassword) {
-		this.adminPassword = adminPassword;
-	}
 }

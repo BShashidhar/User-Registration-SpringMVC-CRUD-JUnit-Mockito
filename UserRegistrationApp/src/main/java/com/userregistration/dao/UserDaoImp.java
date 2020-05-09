@@ -1,4 +1,4 @@
-package com.social.imageApp.account.dao;
+package com.userregistration.dao;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.social.imageApp.account.model.User;
+import com.userregistration.model.User;
 
 @Repository
 @Transactional

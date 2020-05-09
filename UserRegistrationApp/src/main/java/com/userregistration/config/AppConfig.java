@@ -1,4 +1,4 @@
-package com.social.imageApp.account.config;
+package com.userregistration.config;
 
 import static org.hibernate.cfg.AvailableSettings.C3P0_ACQUIRE_INCREMENT;
 import static org.hibernate.cfg.AvailableSettings.C3P0_MAX_SIZE;

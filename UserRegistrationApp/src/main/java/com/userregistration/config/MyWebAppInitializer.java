@@ -1,4 +1,4 @@
-package com.social.imageApp.account.config;
+package com.userregistration.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
